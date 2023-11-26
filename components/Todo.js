@@ -5,7 +5,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { deleteDoc, doc } from "firebase/firestore";
 import { db } from "@/firebase";
 import { useContext } from "react";
-import { TodoContext } from "@/pages/TodoContext";
+import { TodoContext } from "@/TodoContext";
 import { useRouter } from "next/router";
 
 const Todo = ({ id, timestamp, title, detail }) => {

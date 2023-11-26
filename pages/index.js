@@ -10,7 +10,7 @@ import {
 import TodoList from "@/components/TodoList";
 import TodoForm from "@/components/TodoForm";
 import { useState } from "react";
-import { TodoContext } from "./TodoContext";
+import { TodoContext } from "../TodoContext";
 import { useAuth } from "@/Auth";
 import { auth, db } from "@/firebase";
 import { verifyIdToken } from "@/firebaseAdmin";
@@ -60,7 +60,7 @@ export default function Home({ todosProps }) {
             {alertMessage}
           </Alert>
         </Snackbar>
-        <TodoList todosProps={todosProps}/>
+        <TodoList todosProps={todosProps} />
       </Container>
     </TodoContext.Provider>
   );

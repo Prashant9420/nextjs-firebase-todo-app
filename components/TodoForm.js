@@ -8,7 +8,7 @@ import {
 import { useContext, useEffect, useRef, useState } from "react";
 import { db } from "@/firebase";
 import { addDoc } from "firebase/firestore";
-import { TodoContext } from "@/pages/TodoContext";
+import { TodoContext } from "@/TodoContext";
 import { useAuth } from "@/Auth";
 
 const TodoForm = () => {
