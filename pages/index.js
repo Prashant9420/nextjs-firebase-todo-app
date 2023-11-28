@@ -7,14 +7,14 @@ import {
   Snackbar,
   Typography,
 } from "@mui/material";
-import TodoList from "@/components/TodoList";
-import TodoForm from "@/components/TodoForm";
+import TodoList from "@/public/components/TodoList";
+import TodoForm from "@/public/components/TodoForm";
 import { useState } from "react";
-import { TodoContext } from "../TodoContext";
-import { useAuth } from "@/Auth";
+import { TodoContext } from "@/public/TodoContext";
+import { useAuth } from "@/public/Auth";
 import { auth, db } from "@/firebase";
-import { verifyIdToken } from "@/firebaseAdmin";
-import { collection, doc, getDocs, orderBy, where } from "firebase/firestore";
+import { verifyIdToken } from "@/public/firebaseAdmin";
+import { collection, getDocs, orderBy, where } from "firebase/firestore";
 import { query } from "express";
 import nookies from "nookies";
 

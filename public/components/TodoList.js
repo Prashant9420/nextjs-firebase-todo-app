@@ -8,7 +8,7 @@ import {
 } from "@firebase/firestore";
 import { useState, useEffect } from "react";
 import Todo from "./Todo";
-import { useAuth } from "@/Auth";
+import { useAuth } from "@/public/Auth";
 
 const TodoList = ({ todosProps }) => {
   const [todos, setTodos] = useState([]);

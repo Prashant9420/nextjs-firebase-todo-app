@@ -8,8 +8,8 @@ import {
 import { useContext, useEffect, useRef, useState } from "react";
 import { db } from "@/firebase";
 import { addDoc } from "firebase/firestore";
-import { TodoContext } from "@/TodoContext";
-import { useAuth } from "@/Auth";
+import { TodoContext } from "@/public/TodoContext";
+import { useAuth } from "@/public/Auth";
 
 const TodoForm = () => {
   const inputAreaRef = useRef();
